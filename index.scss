@@ -1,0 +1,109 @@
+@import "./variable.scss";
+@import "./style/bootstrap1/scss/bootstrap.scss";
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    .head {
+        background-image: url('./asset/prayer.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 16rem;
+        margin: 0;
+        padding: 0;
+        .wrapper {
+            // background-color:red;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: inherit;
+            width: inherit;
+            margin-bottom: 2.75rem;
+            color: $sec_white;
+            .para {
+                // background-color: blue;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.prayer-req {
+    // background-color: brown;
+    width: 100%;
+    display: flex;
+
+    margin-top: 3rem;
+    .request {
+        // background-color: green;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-flow: column;
+        font-size: 59px;
+        font-weight: bold;
+        height: 35rem;
+        width: 10rem;
+        color: $light_grey;
+        margin: 0 3rem;
+        // ul {
+        //     list-style-type: none;
+        //     margin: 5px 3rem !important;
+        //     padding: 0 !important;
+        // }
+        .inverse {
+            writing-mode: vertical-rl;
+            text-orientation: sideways-right;
+            transform: rotate(180deg);
+        }
+    }
+    .form-wrapper {
+        // background-color: yellow;
+        margin-left: 10px!important;
+        width: 20rem;
+        form {
+            // background-color: red;
+            height: 35rem;
+            width: 50rem;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            margin: 3rem 1rem !important;
+            font-size: 20px;
+            font-weight: 500;
+            @media screen and (min-width: 360px){
+                form{
+                    // background-color: yellow;
+                    width: 20rem;
+
+                }
+            }
+            .name {
+                // background-color: green;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1rem;
+            }
+            .phone {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1rem;
+            }
+            .prayer {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1rem;
+            }
+        }
+        .btn {
+            margin: 0 1rem !important;
+        }
+    }
+}
